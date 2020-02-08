@@ -2,8 +2,8 @@
 	require_once("conexion.php");
 	class DetalleCompra extends Conexion{
 		
-		public function alta($cantidad){
-			$this-> sentencia= "INSERT INTO  detalle_compra VALUES(null, '$cantidad')";
+		public function alta($IDmateriaprima,$IDcompra,$cantidad){
+			$this-> sentencia= "INSERT INTO  detalle_compra VALUES(null,'$IDmateriaprima','$IDcompra','$cantidad')";
 			$this->ejecutarSentencia();
 		}
 

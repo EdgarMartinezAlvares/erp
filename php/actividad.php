@@ -2,8 +2,8 @@
 	require_once("conexion.php");
 	class Actividad extends Conexion{
 
-		public function alta($registro, $movimiento_act, $movimiento_tabla){
-			$this-> sentencia= "INSERT INTO  actividad VALUES(null, '$registro', '$movimiento_act', '$pmovimiento_tabla')";
+		public function alta($registro, $IDusuario, $movimiento_act, $movimiento_tabla){
+			$this-> sentencia= "INSERT INTO  actividad VALUES(null, '$registro','$IDusuario', '$movimiento_act', '$pmovimiento_tabla')";
 			$this->ejecutarSentencia();
 		}
 

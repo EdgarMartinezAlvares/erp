@@ -2,8 +2,8 @@
 	require_once("conexion.php");
 	class Compra extends Conexion{
 		
-		public function alta($fecha, $total, $tipo_pago){
-			$this-> sentencia= "INSERT INTO  compra VALUES(null, '$fecha', '$total', '$tipo_pago')";
+		public function alta($fecha, $total, $tipo_pago, $IDcliente){
+			$this-> sentencia= "INSERT INTO  compra VALUES(null, '$fecha', '$total', '$tipo_pago', '$IDcliente')";
 			$this->ejecutarSentencia();
 		}
 

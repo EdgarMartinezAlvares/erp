@@ -17,8 +17,10 @@
 			return $this->obtenerSentencia();
 			
 		}
-
+		public function modificar($nombre,$tipo,$password,$id){
+			$this->sentencia="UPDATE FROM usuario SET nombre='$nombre',tipo='$tipo', password='$password' WHERE IDusuario='id'";
+			return $this->ejecutarSentencia();
+			
+		}
 	}
-
-
- ?>
+?>
