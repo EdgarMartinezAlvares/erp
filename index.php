@@ -7,7 +7,7 @@
 <body>
     
 <?php
-    require_once("php/vistaPedido.php");
+    require_once("php/vistaProyecto.php");
 ?>
 </body>
 </html>

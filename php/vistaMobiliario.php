@@ -1,12 +1,12 @@
 <form action="" method="post">
 
     Nombre: <br>
-	<input type="text" name="nombre" placeholder="Escribe tu nombre">
+	<input type="text" name="nombre" placeholder="Escribe el nombre del mobiliario">
 	<br>
 	Descripcion: <br>
 	<input type="text" name="descripcion" placeholder="Escribe la descripcion"> <br>
 	Cantidad: <br>
-	<input type="text" name="cantidad" placeholder="Escribe el costo"> <br>
+	<input type="text" name="cantidad" placeholder="Escribe la cantidad del mobiliario"> <br>
 	Nic: <br>
 	<input type="text" name="nic" placeholder="Escribe el nic"> <br>
 	Tipo: <br>

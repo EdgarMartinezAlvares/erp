@@ -4,15 +4,15 @@
     <input type="date" name="fecha">
     <br>
 	IDcliente: <br>
-	<input type="text" name="IDcliente" placeholder="Escribe el tipo"> <br>
+	<input type="text" name="IDcliente" placeholder="Escribe el IDcliente"> <br>
 	Precio: <br>
-	<input type="text" name="precio" placeholder="Escribe la descripcion"> <br>
-	cantidad: <br>
-	<input type="text" name="cantidad" placeholder="Escribe el precio"> <br>
-	direccion: <br>
-	<input type="text" name="direccion" placeholder="Escribe el stock"> <br>
+	<input type="text" name="precio" placeholder="Escribe el precio"> <br>
+	Cantidad: <br>
+	<input type="text" name="cantidad" placeholder="Escribe la cantidad"> <br>
+	Direccion: <br>
+	<input type="text" name="direccion" placeholder="Escribe la direccion"> <br>
 	IDproducto: <br>
-	<input type="text" name="IDproducto" placeholder="Escribe las existencias del producto"> <br>
+	<input type="text" name="IDproducto" placeholder="Escribe el IDproducto"> <br>
 	
 	<input type="submit" name="alta" value="Guardar Pedido"> 
 </form>
@@ -28,7 +28,7 @@ $obj = new Pedido();
         $direccion=$_POST["direccion"];
         $IDproducto=$_POST["IDproducto"];
 		$obj -> alta($fecha, $IDcliente,$precio, $cantidad,$direccion,$IDproducto);
-		echo "<h2>Pedido registrada</h2>";
+		echo "<h2>Pedido registrado</h2>";
 	}
  ?>
 

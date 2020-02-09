@@ -1,9 +1,9 @@
 <?php 
 	require_once("conexion.php");
-	class Producto extends Conexion{
+	class Productos extends Conexion{
 		
 		public function alta($nombre, $descripcion, $preciov, $precioc, $cantidad, $cantmin, $cantmax, $categoria){
-			$this-> sentencia= "INSERT INTO  producto VALUES(null, '$nombre', '$descripcion', '$preciov', '$precioc', '$cantidad', '$cantmin', '$cantmax', '$cetegoria')";
+			$this-> sentencia= "INSERT INTO  producto VALUES(null, '$nombre', '$descripcion', '$preciov', '$precioc', '$cantidad', '$cantmin', '$cantmax', '$categoria')";
 			$this->ejecutarSentencia();
 		}
 
@@ -17,7 +17,7 @@
 			return $this->obtenerSentencia();
 			
 		}
-		public function modificar $nombre, $descripcion, $preciov, $precioc, $cantidad, $cantmin, $cantmax, $categoria){
+		public function modificar ($nombre, $descripcion, $preciov, $precioc, $cantidad, $cantmin, $cantmax, $categoria){
 			$this->sentencia="UPDATE FROM usuario SET nombre='$nombre',descripcion='$descripcion', preciov='$preciov',precioc='$precioc',cantidad='$cantidad',cantmin='$cantmin',cantmax='$cabtmax',categoria='$categoria' WHERE IDproducto='id'";
 			return $this->ejecutarSentencia();
 			

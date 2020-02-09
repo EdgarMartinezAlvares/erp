@@ -2,7 +2,7 @@
 	require_once("conexion.php");
 	class Proveedor extends Conexion{
 		
-		public function alta( $nombre, $telefono, $direccion, $correo, $rfc){
+		public function alta( $nombre,$telefono,$direccion,$correo,$rfc){
 			$this-> sentencia= "INSERT INTO  proveedor VALUES(null, '$nombre', '$telefono', '$direccion', '$correo', '$rfc')";
 			$this->ejecutarSentencia();
 		}
@@ -18,12 +18,12 @@
 			
 		}
 
-	}
-	public function modificar ($nombre, $telefono, $direccion, $correo, $rfc){
+	
+		public function modificar($nombre, $telefono, $direccion, $correo, $rfc){
 		$this->sentencia="UPDATE FROM usuario SET nombre='$nombre',telefono='$telefono', direccion='$direccion',correo='$correo',rfc='$rfc' WHERE IDproveedor='id'";
 		return $this->ejecutarSentencia();
 		
 	}
 
-
+	}
  ?>
